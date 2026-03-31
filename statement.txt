@@ -1,43 +1,46 @@
 # Problem Statement
 
-Understanding the sentiment behind a sentence—whether it expresses a positive or negative emotion—is an important task in many real-world applications such as product reviews, customer feedback analysis, and social media monitoring. Organizations often rely on this information to improve their services, products, and user experience.
+Understanding the sentiment behind a sentence—whether it expresses a positive or negative emotion—is an important task in many real-world applications such as product reviews, customer feedback analysis, and social media monitoring. Organizations rely on such insights to improve their services, products, and overall user experience.
 
-However, manually analyzing and classifying large amounts of text data is both time-consuming and inconsistent. Human interpretation can vary, leading to unreliable results. Therefore, there is a need for a simple, automated system that can quickly and accurately classify the sentiment of a user-entered sentence.
+Manual classification of text data is time-consuming and often inconsistent due to subjective human interpretation. This creates a need for an automated system that can quickly and reliably classify sentiment.
 
-This project aims to build a basic sentiment analysis system using machine learning techniques that can automatically determine whether a sentence conveys a positive or negative sentiment.
+This project aims to develop a simple machine learning-based system that automatically determines whether a user-entered sentence expresses a positive or negative sentiment.
 
 ---
 
 # Objectives
 
+The main objectives of this project are:
+
 - To develop a simple and efficient sentiment classification system  
 - To apply basic Natural Language Processing (NLP) techniques  
 - To understand the implementation of machine learning algorithms for text classification  
 - To provide real-time sentiment prediction based on user input  
-- To create a beginner-friendly project for academic learning  
+- To create a beginner-friendly academic project  
 
 ---
 
 # Scope of the Project
 
-The scope of this project is limited to building a lightweight and easy-to-understand sentiment analysis system. The system:
+This project focuses on building a lightweight and easy-to-understand sentiment analysis system with the following scope:
 
 - Processes short user-entered sentences  
-- Classifies sentiment into Positive or Negative categories  
+- Classifies sentiment into two categories: Positive and Negative  
 - Uses a small, predefined dataset for training  
 - Applies the Bag-of-Words model for text representation  
 - Implements a Naive Bayes classifier for prediction  
 
-This project is primarily designed for educational purposes and demonstrations. It focuses on simplicity rather than high accuracy or large-scale deployment.
+The project is designed primarily for academic learning and demonstration purposes. It emphasizes simplicity and clarity over large-scale deployment or high accuracy.
 
 ## Limitations
 
-The project does not include:
-- Neutral sentiment classification  
-- Sarcasm or context understanding  
-- Large-scale or real-time streaming data processing  
-- Deep learning or advanced NLP techniques  
-- Multilingual text analysis  
+The system has the following limitations:
+
+- Does not support neutral sentiment classification  
+- Cannot detect sarcasm or contextual nuances  
+- Not designed for large-scale or real-time data processing  
+- Does not use advanced or deep learning techniques  
+- Limited to basic English text input  
 
 ---
 
@@ -45,32 +48,34 @@ The project does not include:
 
 This project is intended for:
 
-- Students learning AI/ML concepts for the first time  
-- Beginners who want to understand text classification  
-- Teachers looking for simple ML-based mini projects  
-- Anyone interested in a lightweight sentiment analysis demonstration  
+- Students learning Artificial Intelligence and Machine Learning  
+- Beginners exploring text classification techniques  
+- Educators demonstrating basic ML concepts  
+- Users seeking a simple sentiment analysis tool  
 
 ---
 
 # High-Level Features
 
-- Predicts Positive or Negative sentiment  
-- Provides real-time prediction based on user input  
-- Uses Bag of Words model for text vectorization  
-- Implements Naive Bayes classifier for fast and efficient training  
-- Lightweight and easy-to-run Python script  
-- Does not require external datasets  
-- Minimal preprocessing required  
+The system provides the following features:
+
+- Sentiment classification as Positive or Negative  
+- Real-time prediction based on user input  
+- Text vectorization using the Bag-of-Words model  
+- Fast and efficient training using Naive Bayes classifier  
+- Lightweight implementation with minimal dependencies  
+- No requirement for external datasets  
+- Simple and easy-to-run Python script  
 
 ---
 
 # Significance of the Project
 
-This project serves as an introduction to how machine learning can be applied to real-world problems involving text data. It helps users understand the workflow of:
+This project demonstrates how machine learning can be applied to solve real-world problems involving text data. It provides practical exposure to the complete workflow of a machine learning system, including:
 
 - Data preparation  
 - Feature extraction  
 - Model training  
 - Prediction and evaluation  
 
-Overall, it provides a strong foundation for further exploration in the fields of machine learning and natural language processing.
+Overall, the project builds a strong foundation for further exploration in machine learning and natural language processing.
