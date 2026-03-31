@@ -1,53 +1,104 @@
-#  Simple Sentiment Analysis Using Python & Machine Learning
+# Student Performance Predictor
 
-##  Overview
-This project is a beginner-friendly AI/ML-based **Sentiment Analyzer** that predicts whether a given sentence expresses a **positive** or **negative** sentiment.
+## Overview
+This is a machine learning project that predicts whether a student will Pass or Fail based on key academic factors such as study hours, attendance percentage, and previous exam score.
 
-It uses a small custom dataset for training and applies basic Natural Language Processing (NLP) techniques. The model is trained using the **Naive Bayes classifier**, a simple and fast algorithm suitable for text classification.
-
-The user can enter any sentence at runtime, and the system instantly returns:
-- Predicted sentiment
-- Confidence score
+This project was developed as part of an AI/ML course to demonstrate the practical application of machine learning.
 
 ---
 
-##  Features
--  Classifies text into **Positive** or **Negative** sentiment  
--  Real-time prediction based on user input  
--  Uses **Bag-of-Words** model for text processing  
--  Lightweight and easy to understand  
--  Ideal for beginner AI/ML projects  
--  No large datasets required  
+## What This Project Does
+
+- Generates a dataset of 300 students with relevant academic information  
+- Performs data analysis and visualization  
+- Creates charts to understand:
+  - Pass vs Fail distribution  
+  - Study hours distribution  
+  - Correlation between features  
+- Trains and compares three machine learning models:
+  - Logistic Regression  
+  - Decision Tree  
+  - Random Forest  
+- Selects the best-performing model based on accuracy  
+- Saves the trained model for future use  
+- Provides an interactive system for predicting student performance  
 
 ---
 
-##  Technologies / Tools Used
-- **Python 3**
-- **scikit-learn** (Machine Learning)
-- **CountVectorizer** (NLP – Bag of Words)
-- **Naive Bayes Classifier**
-- **NumPy**
+## Project Workflow
+
+1. Generate dataset  
+2. Perform data visualization  
+3. Train machine learning models  
+4. Compare model performance  
+5. Select the best model  
+6. Save the trained model  
+7. Take user input and predict result  
 
 ---
 
-##  How the System Works
-1. A small dataset of positive and negative sentences is defined manually  
-2. **CountVectorizer** converts text into numerical features (Bag-of-Words)  
-3. A **Naive Bayes classifier** is trained on this dataset  
-4. User enters a sentence during runtime  
-5. The model predicts the sentiment and displays:
-   - Sentiment label (**Positive/Negative**)
-   - Confidence score  
+## How to Run the Project
 
----
+### Step 1: Install Dependencies
 
-##  Steps to Install & Run the Project
-
-### 1. Install Python
-Make sure **Python 3.x** is installed on your system.
-
-### 2. Install Required Libraries
-Open terminal / CMD and run:
 ```bash
-pip install scikit-learn
-pip install numpy
+pip install -r requirements.txt
+
+Step 2: Run the Project
+python main.py
+
+Project Structure
+project-folder/
+│── main.py
+│── requirements.txt
+│── students.csv
+│── charts/
+│── model/
+
+Example Output
+[Step 4] Training and comparing models...
+
+Model                   Accuracy   CV Score
+--------------------------------------------
+Logistic Regression       86.67%     85.21%
+Decision Tree             88.33%     87.10%
+Random Forest             91.67%     90.43%
+
+The best model is Random Forest.
+The accuracy of the model is 91.67%.
+
+Interactive Predictor
+Enter study hours per day (1–9): 6
+Enter attendance percentage (40–100): 85
+Enter previous score (0–100): 72
+
+
+Output
+Result: PASS
+Confidence: Pass = 88.0% | Fail = 12.0%
+
+
+Technologies Used
+Python 3
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+
+
+Key Features
+Simple and easy-to-understand implementation
+Multiple model comparison
+Automatic dataset generation
+Data visualization support
+Model saving for reuse
+Interactive prediction system
+
+
+Conclusion
+This project demonstrates how machine learning can be used to analyze student data and predict academic performance.
+It provides practical experience in data processing, model training, evaluation, and prediction.
+
+Author
+Pratyush Prasad
